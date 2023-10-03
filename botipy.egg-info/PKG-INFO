@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: botipy
-Version: 0.2.4
+Version: 0.3.0
 Summary: Template for discord.py bots
 Author: Pang Hua Yen
 Author-email: <panghua.yen@gmail.com>
@@ -24,3 +24,11 @@ Requires-Dist: python-dotenv
 pip install botipy
 
 ## Commands
+
+botipy -h
+
+- General usage guide
+
+botipy start PROJECT_NAME 
+
+- Build your discord.py bot project with the given name.
