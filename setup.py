@@ -7,12 +7,12 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '0.1.0'
+VERSION = '0.2.4'
 DESCRIPTION = 'Template for discord.py bots'
 LONG_DESCRIPTION = 'A package that allows users to build simple discord.py bots with configurations and environmental setup.'
 
 setup(
-    name="botify",
+    name="botipy",
     version=VERSION,
     author="Pang Hua Yen",
     author_email="<panghua.yen@gmail.com>",
@@ -20,6 +20,9 @@ setup(
     long_description_content_type="text/markdown",
     long_description=long_description,
     packages=find_packages(),
+    package_data={
+        'botipy': ['src/*'],
+    },
     install_requires=['virtualenv', 'discord', 'flask', 'gunicorn', 'python-dotenv'],
     keywords=['python', 'discord', 'bot', 'discord.py', 'discord bot'],
     classifiers=[
